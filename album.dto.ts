@@ -10,4 +10,5 @@ export type Album = {
     pictures?: number | undefined,
     createdAt?: Date | undefined,
     updatedAt?: Date | undefined
+    test?:string | undefined
 }
