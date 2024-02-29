@@ -1,16 +1,15 @@
-import { Category } from "./category.dto"
-import { Language } from "./language.dto"
-import { Tag } from "./tags.dto"
-
-export type Book = {
+export type BookType = {
+    id: string,
     title: string,
-    language: Language,
-    tags: Tag[],
-    categories: Category[],
-    artist: string | undefined,
+    titleUrl:string,
+    language: string,
+    tags: string,
+    categories: string,
+    views: number,
+    artist: string,
     pictures: number,
     thumb: string,
     albumUrl: string,
-    createdAt: Date | undefined,
-    updatedAt: Date | undefined,
+    createdAt: Date,
+    updatedAt: Date
 }

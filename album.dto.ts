@@ -1,9 +1,13 @@
-import { Category } from "./category.dto"
+
 
 export type Album = {
-    id:string | undefined,
-    title:string,
-    categories:Category[],
-    createdAt:Date | undefined,
-    updatedAt:Date | undefined
+    id: string ,
+    title: string,
+    titleUrl:string,
+    categories: string,
+    thumb?: string | undefined,
+    albumUrl?: string | undefined,
+    pictures?: number | undefined,
+    createdAt?: Date | undefined,
+    updatedAt?: Date | undefined
 }
